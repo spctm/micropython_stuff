@@ -189,6 +189,5 @@ class SensorTemp():
         
     os.sync()
 
-time.sleep(10)
 s = SensorTemp()
 s.collect()
