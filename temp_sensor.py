@@ -123,7 +123,7 @@ class SHT31D():
         
         if fahrenheit:
             # Convert Celsius to Fahrenheit
-            return ((celsius * ratio) + 32)
+            return (315 * raw_temp/65535) - 49
         
         return celsius
 
