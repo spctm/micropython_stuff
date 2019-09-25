@@ -119,7 +119,6 @@ class SHT31D():
         # Convert raw sensor data to Celsius
         raw_temp = (raw_val[0] << 8) + raw_val[1]
         celsius = (175 * raw_temp/65535) - 45
-        ratio = 9.0/5.0
         
         if fahrenheit:
             # Convert Celsius to Fahrenheit
